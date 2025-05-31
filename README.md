@@ -11,9 +11,9 @@ Disciplina: Bancos de Dados Não Relacionais
 
 ## 🗂️ Modelagem do Banco
 
-A modelagem foi estruturada pensando nas operações de um e-commerce simples, com foco principal em **produtos artesanais**.
+A modelagem foi estruturada pensando nas requisicos importantes para de um e-commerce simples, com foco principal em auxiliar um vendedor a manter registros de seus atuais clientes, vendas e **produtos artesanais**.
 
-📷 *[Insira aqui uma imagem da modelagem do banco]*
+
 
 
 ## ⚙️ Requisitos
@@ -74,6 +74,7 @@ O Angular iniciará em:  ```http://localhost:4200```
 
 ## 🧪 Testando a Aplicação
 
+### Teste via interface frontend
 Acesse o navegador e vá até a aba **"Produtos"**.
 
 Nesta página é possível:
@@ -94,6 +95,9 @@ A seguir, confira algumas capturas de telas de teste:
 ![image](https://github.com/user-attachments/assets/d22355c6-9cec-4d79-9247-5f015663199c)
 ![image](https://github.com/user-attachments/assets/582656d9-a67e-434a-aee4-fa3c2dff2344)
 ![image](https://github.com/user-attachments/assets/e0cc438e-a5d1-4f28-8d85-66e793886626)
+
+### Teste via ThunderClient
+Você também pode realizar testes funcionais da API utilizando ferramentas como Postman ou ThunderClient no Visual Studio Code, que será mostrado a seguir:
 
 
 ## 📁 Estrutura do Projeto
