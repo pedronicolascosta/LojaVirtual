@@ -1,0 +1,28 @@
+.footer {
+    background-color: #52879C;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    height: 3vh;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+i {
+    font-size: 15px; 
+    vertical-align: middle; 
+}

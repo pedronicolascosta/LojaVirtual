@@ -1,0 +1,34 @@
+<div class="modal-backdrop" (click)="fecharModal()"></div>
+
+<div class="modal-content">
+  <button class="fechar-btn" (click)="fecharModal()">×</button>
+  <h1>Adicionar Produto</h1>
+  
+  <form (ngSubmit)="salvarProduto()">
+    <div>
+      <label for="titulo">Título:</label>
+      <input type="text" [(ngModel)]="produto.titulo" name="titulo" id="titulo" required>
+    </div>
+
+    <div>
+      <label for="descricao">Descrição:</label>
+      <input type="text" [(ngModel)]="produto.descricao" name="descricao" id="descricao" required>
+    </div>
+
+    <div>
+      <label for="preco">Preço:</label>
+      <input type="text" [(ngModel)]="produto.preco" name="preco" id="preco" placeholder="R$" required (input)="formatarPreco()">
+    </div>
+
+    <div>
+      <label for="imagem">URL da imagem:</label>
+      <input type="text" [(ngModel)]="produto.imagem" name="imagem" id="imagem" placeholder="URL da Imagem" required>
+    </div>
+
+    <div class="botoes">
+      <button type="button" class="cancelar-btn" (click)="fecharModal()">Cancelar</button>
+      <button type="submit" class="salvar-btn">Adicionar</button>
+    </div>
+  </form>
+  
+</div>

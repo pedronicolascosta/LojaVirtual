@@ -1,0 +1,65 @@
+@import  "~@flaticon/flaticon-uicons/css/all/all" ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Garantir que o body ocupe toda a tela */
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+/* Estilize o seu menu para ocupar toda a largura */
+app-menu {
+    width: 100%;
+    margin: 0; /* Remover margem */
+    padding: 0; /* Remover padding */
+} 
+
+body{
+    background-color: #181B22;
+}
+
+/* Estilo global para todos os modais SweetAlert2 */
+.swal2-popup {
+    font-family: outfit; /* Substitua por qualquer fonte que desejar */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o botão de confirmar (Fechar) */
+.custom-confirm-button {
+    background-color: #4C9F70 !important; /* Cor de fundo verde */
+    color: white !important;              /* Cor do texto branca */
+    border-radius: 5px !important;        /* Bordas arredondadas */
+    padding: 10px 20px !important;        /* Espaçamento */
+    border: none !important;
+}
+  
+/* Aumentando a especificidade para garantir que o estilo seja aplicado */
+.swal2-popup .swal2-cancel.custom-cancel-button {
+    background-color: #ffcc00 !important;  /* Cor de fundo amarela */
+    color: black !important;                /* Cor do texto preta */
+    border-radius: 5px !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    display: flex !important;              /* Usar flexbox para alinhar o conteúdo */
+    align-items: center !important;         /* Alinhar verticalmente o ícone e o texto */
+    justify-content: center !important;     /* Centralizar o conteúdo do botão */
+}
+  
+/* Estilo de hover para os botões */
+.custom-confirm-button:hover {
+    background-color: #88ba9d !important; /* Cor de fundo ao passar o mouse */
+}
+  
+.custom-cancel-button:hover {
+    background-color: #ffd633 !important; /* Cor de fundo ao passar o mouse */
+}
+
+.custom-cancel-button i {
+    margin-right: 5px;  /* Espaço entre o ícone e o texto */
+    font-size: 1em;    /* Tamanho do ícone */
+  }

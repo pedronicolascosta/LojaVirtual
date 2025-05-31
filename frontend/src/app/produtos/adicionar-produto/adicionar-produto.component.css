@@ -1,0 +1,157 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f4e6d7;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1001;
+}
+
+.fechar-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #333;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 20px;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #6b4f36;
+  border-radius: 8px;
+  outline: none;
+  color: #333;
+  background-color: #fff;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+button.cancelar-btn {
+  padding: 10px 20px;
+  background-color: #f4e6d7;
+  border: 2px solid #b84c4c;
+  color: #b84c4c;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.cancelar-btn:hover {
+  background-color: #f8d7da;
+}
+
+button.salvar-btn {
+  padding: 10px 20px;
+  background-color: #4e7d4e;
+  border: none;
+  color: #f4e6d7;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.salvar-btn:hover {
+  background-color: #3d6b3d;
+}
+
+.modal-excluir {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-sucesso {
+  background: #f5e9dc;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  color: #111317;
+}
+
+button.cancelar-btn {
+  padding: 10px 20px;
+  background-color: #f4e6d7;
+  border: 2px solid #b84c4c;
+  color: #b84c4c;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.cancelar-btn:hover {
+  background-color: #f8d7da;
+}
+
+button.confirmar-btn {
+  padding: 10px 20px;
+  background-color: #4e7d4e;
+  border: none;
+  color: #f4e6d7;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.confirmar-btn:hover{
+  background-color: #3d6b3d;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}

@@ -1,0 +1,71 @@
+<div class="produtos-container">
+    <button class="voltar-btn" routerLink="/">
+      <img src="../../assets/imagens/back.png" alt="botao-voltar">
+    </button>
+  
+    <h1>Produtos</h1>
+  
+    <div class="produtos-grid">
+      <div class="produto-card adicionar-card" (click)="adicionarProduto()">
+        <div class="adicionar-conteudo">
+          <span>Adicionar Produto</span>
+          <img src="../../assets/imagens/add.png" alt="botao-adicionar">
+        </div>
+      </div>
+  
+      <div class="produto-card" *ngFor="let produto of produtos">
+        <img [src]="produto.imagem" alt="Imagem Produto" />
+        <h2>{{ produto.titulo }}</h2>
+        <p>{{ produto.descricao }}</p>
+        <p class="preco">R${{ produto.preco }}</p>
+        <div class="acoes">
+          <button class="editar" (click)="editarProduto(produto)">
+            <img src="../../assets/imagens/create.png" alt="botao-adicionar">
+          </button>
+          <button class="excluir" (click)="excluirProduto(produto)">
+            <img src="../../assets/imagens/trash.png" alt="botao-adicionar">
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div *ngIf="mostrarModalExcluir" class="modal-excluir">
+      <div class="modal-conteudo">
+        <h2>Confirmar Exclusão</h2>
+        <p>Tem certeza que deseja excluir o produto <b>"{{ produtoParaExcluir?.titulo }}"</b>?</p>
+        <div class="botoes">
+          <button (click)="confirmarExclusao()" class="confirmar-btn">Sim, excluir</button>
+          <button (click)="cancelarExclusao()" class="cancelar-btn">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="modalExcluirSucesso" class="modal-excluir">
+      <div class="modal-conteudo">
+        <h1 class="titulo-sucesso">Sucesso!</h1>
+        <p>O produto <b>"{{ produtoParaExcluir?.titulo }}"</b> foi excluído com sucesso!</p>
+      </div>
+    </div>
+
+    <div *ngIf="modalEditarSucesso" class="modal-excluir">
+      <div class="modal-conteudo">
+        <h1 class="titulo-sucesso">Sucesso!</h1>
+        <p>O produto <b>"{{ produtoEditado?.titulo }}"</b> foi editado com sucesso!</p>
+      </div>
+    </div>
+
+  <app-adicionar-produto 
+    *ngIf="mostrarModal" 
+    (fechar)="fecharModal()" 
+    (adicionar)="adicionarProdutoLista($event)">
+  </app-adicionar-produto>
+
+  <app-editar-produto 
+    *ngIf="mostrarModalEditar" 
+    [produto]="produtoSelecionado"
+    (editar)="carregarProdutos()"
+    (fechar)="fecharModalEditar()"
+    (editar)="produtoEditadoSucesso($event)">
+  </app-editar-produto>
+</div>  

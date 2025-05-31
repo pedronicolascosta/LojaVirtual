@@ -1,0 +1,146 @@
+.home {
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+  height: 97vh;  
+  font-family: outfit;
+}
+
+.lado1, .lado2 {
+  width: 100%;
+  height: 100%;  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center;  
+}
+
+h1 {
+  font-size: 4em;
+  color: #F1E9DB;
+  text-align: left;
+}
+
+p {
+  font-size: 1.5em;
+  color: #F1E9DB;
+}
+
+.imagem-container {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: transform 0.3s ease; 
+  transform: scale(1); 
+}
+
+.imagem-container:hover {
+  transform: scale(1.1); 
+}
+
+.imagem-container-baixo {
+  position: relative;
+  display: inline-block;
+  width: 615;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: transform 0.3s ease; 
+  transform: scale(1); 
+}
+
+.imagem-container-baixo:hover {
+  transform: scale(1.1); 
+}
+
+.imagem-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imagem-container-baixo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagem-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(24, 27, 34, 1) 0%, rgba(96, 108, 136, 0) 100%);
+  pointer-events: none;
+}
+
+.imagem-container-baixo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(24, 27, 34, 1) 0%, rgba(96, 108, 136, 0) 100%);
+  pointer-events: none;
+}
+
+.texto-sobre-imagem {
+  position: absolute;
+  bottom: 20px; /* distancia do texto em relação à base */
+  left: 20px; /* distancia da esquerda */
+  color: #E8DDD1;
+  font-size: 1.5em;
+  font-weight: bold;
+  z-index: 1; /* fica acima do gradiente */
+  margin: 0;
+}
+
+.btn-iniciar {
+  padding: 10px 10px;
+  background-color: #4c9f7000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: transform 0.3s ease; 
+  transform: scale(1); 
+}
+
+.imagem-botao{
+  width: 300px;
+  height: 300px;
+}
+
+.imagem-botao-baixo{
+  width: 615px;
+  height: 300px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #333;
+  font-weight: 500;
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
+  color: #52879C;
+  font-weight: 600;
+  width: 480px;
+  text-align: left; 
+}
+
+.cima{
+  display: flex;
+}
+
+.baixo{
+  display: flex;
+}
