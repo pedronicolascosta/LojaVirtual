@@ -1,8 +1,6 @@
 # 🛒 API E-commerce de Produtos Artesanais
-
+![titulo](https://github.com/user-attachments/assets/c994cd99-e915-409c-b840-daf4de8dd521)
 Este projeto foi desenvolvido como parte da disciplina de **Bancos de Dados Não Relacionais**. A proposta foi criar uma **API com operações CRUD**, utilizando o banco **MongoDB**, baseada em um dos temas propostos pelo professor — neste caso, um **E-commerce de Produtos Artesanais**.
-
----
 
 ## 👤 Responsável
 
@@ -11,15 +9,12 @@ Curso: Ciência da Computação
 Semestre: 3º  
 Disciplina: Bancos de Dados Não Relacionais  
 
----
-
 ## 🗂️ Modelagem do Banco
 
 A modelagem foi estruturada pensando nas operações de um e-commerce simples, com foco principal em **produtos artesanais**.
 
 📷 *[Insira aqui uma imagem da modelagem do banco]*
 
----
 
 ## ⚙️ Requisitos
 
@@ -31,8 +26,6 @@ A modelagem foi estruturada pensando nas operações de um e-commerce simples, c
 - Node.js (versão 12.2 ou superior)
 - NPM
 - Angular CLI (versão 13)
-
----
 
 ## 🚀 Como Executar o Projeto
 
@@ -46,7 +39,6 @@ git clone https://github.com/pedronicolascosta/LojaVirtual.git
 cd LojaVirtual
 ```
 
----
 
 ### 2. Executar o Backend (API em Flask)
 
@@ -62,7 +54,6 @@ python app.py
 
 A API estará disponível em: ```http://127.0.0.1:5000```
 
----
 
 ### 3. Executar o Frontend (Angular)
 
@@ -80,7 +71,6 @@ ng serve
 
 O Angular iniciará em:  ```http://localhost:4200```
 
----
 
 ## 🧪 Testando a Aplicação
 
@@ -105,7 +95,6 @@ A seguir, confira algumas capturas de telas de teste:
 ![image](https://github.com/user-attachments/assets/582656d9-a67e-434a-aee4-fa3c2dff2344)
 ![image](https://github.com/user-attachments/assets/e0cc438e-a5d1-4f28-8d85-66e793886626)
 
----
 
 ## 📁 Estrutura do Projeto
 
@@ -119,9 +108,3 @@ LojaVirtual/
 │   └── ...
 └── README.md
 ```
-
----
-
-## 📃 Licença
-
-Este projeto foi desenvolvido apenas para fins educacionais.
