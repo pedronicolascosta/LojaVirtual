@@ -1,4 +1,4 @@
-# 🛒 API E-commerce de Produtos Artesanais
+# 💻🛒🧀 API E-commerce de Produtos Artesanais
 ![titulo](https://github.com/user-attachments/assets/c994cd99-e915-409c-b840-daf4de8dd521)
 Este projeto foi desenvolvido como parte da disciplina de **Bancos de Dados Não Relacionais**. A proposta foi criar uma **API com operações CRUD**, utilizando o banco **MongoDB**, baseada em um dos temas propostos pelo professor — neste caso, um **E-commerce de Produtos Artesanais**.
 
@@ -14,7 +14,18 @@ Disciplina: Bancos de Dados Não Relacionais
 A modelagem foi estruturada pensando nas requisicos importantes para de um e-commerce simples, com foco principal em auxiliar um vendedor a manter registros de seus atuais clientes, vendas e **produtos artesanais**.
 
 
+## 📁 Estrutura do Projeto
 
+```
+LojaVirtual/
+├── backend/
+│   ├── app.py
+│   └── ...
+├── frontend/
+│   ├── src/
+│   └── ...
+└── README.md
+```
 
 ## ⚙️ Requisitos
 
@@ -98,17 +109,3 @@ A seguir, confira algumas capturas de telas de teste:
 
 ### Teste via ThunderClient
 Você também pode realizar testes funcionais da API utilizando ferramentas como Postman ou ThunderClient no Visual Studio Code, que será mostrado a seguir:
-
-
-## 📁 Estrutura do Projeto
-
-```
-LojaVirtual/
-├── backend/
-│   ├── app.py
-│   └── ...
-├── frontend/
-│   ├── src/
-│   └── ...
-└── README.md
-```
